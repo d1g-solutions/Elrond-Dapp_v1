@@ -1,7 +1,7 @@
 import React from "react";
+import { contractAddress as configContractAddress } from "config";
 import { routeNames } from "routes";
 import { renderWithRouter, testAddress } from "testUtils";
-import { contractAddress as configContractAddress } from "config";
 
 jest.mock("@elrondnetwork/dapp", () => {
   const dapp = jest.requireActual("@elrondnetwork/dapp");
